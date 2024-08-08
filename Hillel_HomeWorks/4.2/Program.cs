@@ -8,10 +8,10 @@ namespace _4._2
         {
 
             Console.WriteLine("Input first number");
-            double num1 = Convert.ToInt32(Console.ReadLine());
-
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            
             Console.WriteLine("Input second number");
-            double num2 = Convert.ToInt32(Console.ReadLine());
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Input the operation (+, -, *, /)");
             string operation = Console.ReadLine();
