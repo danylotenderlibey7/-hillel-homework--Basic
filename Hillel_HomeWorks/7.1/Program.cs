@@ -11,7 +11,7 @@ namespace _7._1
             x6_access = true, x7_access = true, x8_access = true, x9_access = true;
             bool isDraw = false;
             char symbol;
-            int operation;
+            string operation;
             Console.WriteLine();
             Console.WriteLine($" {x1} | {x2} | {x3}");
             Console.WriteLine($"-----------");
@@ -31,10 +31,10 @@ namespace _7._1
                     Console.Write("O Turn: Choose your number:");
                     symbol = 'O';
                 }
-                operation = Convert.ToInt32(Console.ReadLine());
+                operation = Convert.ToString(Console.ReadLine());
                 switch(operation)
                 {
-                    case 1:
+                    case "1":
                         if (x1_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose other number.");
@@ -47,7 +47,7 @@ namespace _7._1
                             x1_access = false;
                             break;
                         }
-                    case 2:
+                    case "2":
                         if (x2_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose other number.");
@@ -60,7 +60,7 @@ namespace _7._1
                             x2_access = false;
                             break;
                         }
-                    case 3:
+                    case "3":
                         if (x3_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose other number.");
@@ -73,7 +73,7 @@ namespace _7._1
                             x3_access = false;
                             break;
                         }
-                    case 4:
+                    case "4":
                         if (x4_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose other number.");
@@ -86,7 +86,7 @@ namespace _7._1
                             x4_access = false;
                             break;
                         }
-                    case 5:
+                    case "5":
                         if (x5_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose other number.");
@@ -99,7 +99,7 @@ namespace _7._1
                             x5_access = false;
                             break;
                         }
-                    case 6:
+                    case "6":
                         if (x6_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose other number.");
@@ -112,7 +112,7 @@ namespace _7._1
                             x6_access = false;
                             break;
                         }
-                    case 7:
+                    case "7":
                         if (x7_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose other number.");
@@ -125,7 +125,7 @@ namespace _7._1
                             x7_access = false;
                             break;
                         }
-                    case 8:
+                    case "8":
                         if (x8_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose other number.");
@@ -138,7 +138,7 @@ namespace _7._1
                             x8_access = false;
                             break;
                         }
-                    case 9:
+                    case "9":
                         if (x9_access == false)
                         {
                             Console.WriteLine("You've already put this number. Choose another number.");
@@ -153,6 +153,7 @@ namespace _7._1
                         }
                     default:
                         Console.WriteLine("Something went wrong. Try again.");
+                        Console.WriteLine("Input a number");
                         i--;
                         break;
 
