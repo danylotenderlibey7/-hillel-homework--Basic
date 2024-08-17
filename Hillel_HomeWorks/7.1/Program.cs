@@ -167,49 +167,49 @@ namespace _7._1
                 Console.WriteLine($" {x7} | {x8} | {x9}");
                 Console.WriteLine();
 
-                if (x1 == x2 && x2 == x3 && x1 == x3) 
+                if (x1 == x2 && x2 == x3) 
                 {
                     Console.WriteLine($"Congratulations Player {x1} won!");
                     isDraw = false;
                     break;
                 }
-                else if(x4 == x5 && x5 == x6 && x4 == x6)
+                else if(x4 == x5 && x5 == x6)
                 {
                     Console.WriteLine($"Congratulations Player {x4} won!");
                     isDraw = false;
                     break;
                 }
-                else if (x7 == x8 && x8 == x9 && x7 == x9)
+                else if (x7 == x8 && x8 == x9)
                 {
                     Console.WriteLine($"Congratulations Player {x8} won!");
                     isDraw = false;
                     break;
                 }
-                else if (x1 == x4 && x4 == x7 && x7 == x1)
+                else if (x1 == x4 && x4 == x7)
                 {
                     Console.WriteLine($"Congratulations Player {x1} won!");
                     isDraw = false;
                     break;
                 }
-                else if (x2 == x5 && x5 == x8 && x8 == x2)
+                else if (x2 == x5 && x5 == x8)
                 {
                     Console.WriteLine($"Congratulations Player {x2} won!");
                     isDraw = false;
                     break;
                 }
-                else if (x3 == x6 && x6 == x9 && x3 == x9)
+                else if (x3 == x6 && x6 == x9)
                 {
                     Console.WriteLine($"Congratulations Player {x3} won!");
                     isDraw = false;
                     break;
                 }
-                else if (x1 == x5 && x5 == x9 && x1 == x9)
+                else if (x1 == x5 && x5 == x9)
                 {
                     Console.WriteLine($"Congratulations Player {x1} won!");
                     isDraw = false;
                     break;
                 }
-                else if (x7 == x5 && x5 == x3 && x3 == x7)
+                else if (x7 == x5 && x5 == x3)
                 {
                     Console.WriteLine($"Congratulations Player {x7} won!");
                     isDraw = false;
@@ -224,6 +224,7 @@ namespace _7._1
             {
                 Console.WriteLine("It's Draw!");
             }
+            Console.WriteLine();
         }
     }
 }
