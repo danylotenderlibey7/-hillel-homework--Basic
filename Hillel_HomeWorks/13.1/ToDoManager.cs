@@ -8,13 +8,13 @@ namespace _13._1
 {
     class ToDoManager
     {
-        private static List<ToDoList> ToDoList = new List<ToDoList>();
+        private static List<ToDoItem> ToDoList = new List<ToDoItem>();
         public static void AddToDo()
         {
             Console.Write("Введіть назву нової справи: ");
             string newTask = Console.ReadLine();
             Console.WriteLine();
-            ToDoList.Add(new ToDoList(newTask));
+            ToDoList.Add(new ToDoItem(newTask));
             Console.WriteLine($"Справу {newTask} додано до списку.");
             Console.WriteLine();
         }
@@ -40,7 +40,7 @@ namespace _13._1
                     {
                         status = "Невиконано!";
                     }
-                    Console.WriteLine($"{i + 1}. {ToDoList[i].name} {status}");
+                    Console.WriteLine($"{i + 1}. {ToDoList[i].Name} {status}");
                     Console.WriteLine();
                 }
             }
@@ -78,7 +78,7 @@ namespace _13._1
 
             if (taskNumber > 0 && taskNumber <= ToDoList.Count)
             {
-                Console.WriteLine($"Справу {ToDoList[taskNumber - 1].name} видалено.");
+                Console.WriteLine($"Справу {ToDoList[taskNumber - 1].Name} видалено.");
                 Console.WriteLine();
                 ToDoList.RemoveAt(taskNumber - 1); 
             }

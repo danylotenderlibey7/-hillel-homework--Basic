@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace _13._1
 {
-    class ToDoList
+    class ToDoItem
     { 
-        public string name { get; set; }
+        public string Name { get; set; }
         public bool IsCompleted { get; set; }
-        public ToDoList(string name)
+        public ToDoItem(string name)
         {
-            this.name = name;
+            this.Name = name;
             IsCompleted = false;
         }
     }
