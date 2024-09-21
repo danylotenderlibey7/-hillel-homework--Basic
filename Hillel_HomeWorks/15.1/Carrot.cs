@@ -8,10 +8,7 @@ namespace _15._1
 {
     public class Carrot : Product
     {
-        public Carrot(double basePrice) : base("Carrot", basePrice) { }
-        public override double GetPrice()
-        {
-            return BasePrice;
-        }
+        public Carrot(double basePrice) : base(basePrice) { }
+
     }
 }

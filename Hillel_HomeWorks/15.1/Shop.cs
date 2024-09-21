@@ -19,7 +19,7 @@ namespace _15._1
             double totalPrice = 0;
             foreach(var item in products)
             {
-                Console.Write($"Product: {item.Name}, Price: {item.BasePrice}");
+                Console.Write($"Product: {item.GetProductName()}, Price: {item.BasePrice}");
                 if (item.Count > 1)
                 {
                     Console.Write($", Count: {item.Count}, Total price: {item.GetPrice()}");

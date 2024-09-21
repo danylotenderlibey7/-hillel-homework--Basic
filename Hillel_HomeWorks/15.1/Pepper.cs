@@ -8,10 +8,6 @@ namespace _15._1
 {
     class Pepper: Product
     {
-        public Pepper(double basePrice) : base("Pepper", basePrice) { }
-        public override double GetPrice()
-        {
-            return BasePrice;
-        }
+        public Pepper(double basePrice) : base(basePrice) { }
     }
 }

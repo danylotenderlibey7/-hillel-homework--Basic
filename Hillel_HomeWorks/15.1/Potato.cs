@@ -8,17 +8,15 @@ namespace _15._1
 {
     public class Potato : Product
     {
-        public  override int Count { get;  set; }
-        public Potato(double basePrice, int count) : base("Potato", basePrice)
+        public  override int Count { get; set; }
+        public Potato(double basePrice, int count) : base(basePrice)
         {
             Count = count;
         }
-
         public override double GetPrice()
         {
-            return BasePrice * Count;
+            return BasePrice * Count; 
         }
-
     }
 
 }

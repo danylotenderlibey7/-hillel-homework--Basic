@@ -8,13 +8,20 @@ namespace _15._1
 {
     public class Product
     {
-        public string Name { get; set; }
-        public double BasePrice { get; set; }
-        public virtual int Count { get; set; } = 1;
-        protected Product(string name, double price)
+
+        private double basePrice;
+        public string GetProductName()
         {
-            Name = name;
-            BasePrice = price;
+            return GetType().Name;
+        }
+        public double BasePrice 
+        {
+            get { return basePrice; }
+        }
+        public virtual int Count { get; set; } = 1;
+        protected Product(double price)
+        {
+            basePrice = price;
         }
         public virtual double GetPrice()
         {
